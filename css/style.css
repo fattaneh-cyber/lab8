@@ -1,1 +1,50 @@
+/* Centered Top Navigation Bar */
+nav {
+    background-color: blue; /* Stretch background color across the page */
+    width: 100%;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    list-style-type: none; /* Remove bullet points */
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+}
+
+nav a {
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none; /* Remove underlines */
+    background-color: #000;
+    display: block;
+}
+
+/* Fixed Side Navigation Bar */
+aside {
+    position: fixed; /* Make sidebar scroll with the page */
+    right: 0;
+    top: 0;
+    background-color: red;
+    height: 100%;
+    width: 20%;
+    list-style-type: none; /* Remove bullet points */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+aside a {
+    display: block;
+    padding: 15px 0;
+    color: #fff;
+    text-decoration: none; /* Remove underlines */
+    background-color: #000;
+}
+
+/* General Styles */
+ul {
+    list-style-type: none; /* Remove bullet points */
+    margin: 0;
+    padding: 0;
+}
 

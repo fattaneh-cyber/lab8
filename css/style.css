@@ -8,28 +8,38 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
-}
-
-#main-navbar ul {
-  position: relative;
   left: 50%;
   float: left;
+  position: relative;
   right: 50%;
   display: block;
   padding: 10px 20px;
 }
 
-#main-navbar ul li a {
+#main-navbar ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+#main-navbar li {
+  display: inline-block;
+}
+
+#main-navbar a {
+  display: block;
   color: #fff;
-  text-decoration: none;
-  background-color: #000;
   text-decoration: underline overline;
+  background-color: #000;
+  padding: 10px 20px;
+  text-align: center;
+  width: 100%;
 }
 
 /* For Sidebar */
 #sidebar {
   position: fixed;
-  right: 0%;
+  right: 0;
   background-color: red;
   height: 100%;
   width: 20%;
@@ -39,9 +49,14 @@
   display: block;
 }
 
-#sidebar ul li a {
+#sidebar-container {
+  padding: 15px 0;
+}
+
+#sidebar a {
+  display: block;
   color: #fff;
   text-decoration: none;
   background-color: #000;
-  padding: 15px 0;
+  padding: 10px 0;
 }

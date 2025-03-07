@@ -1,66 +1,47 @@
-/* General Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Navigation Bar (Top) */
+/* For Navigation */
 #main-navbar {
-    background-color: blue;
-    width: 100%;
+  background-color: blue;
+  overflow: hidden;
+  float: left;
+  width: 100%;
+  position: relative;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
-#navbar-container {
-    width: 100%;
-    text-align: center; /* Center the navigation */
+#main-navbar ul {
+  position: relative;
+  left: 50%;
+  float: left;
+  right: 50%;
+  display: block;
+  padding: 10px 20px;
 }
 
-#navbar-container ul {
-    list-style-type: none;
-    overflow: hidden;
-    padding: 0;
+#main-navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+  background-color: #000;
+  text-decoration: underline overline;
 }
 
-#navbar-container ul li {
-    display: inline-block;
-}
-
-#navbar-container ul li a {
-    display: block;
-    padding: 10px 20px;
-    color: #fff;
-    text-decoration: none;
-    background-color: #000;
-    text-decoration: underline overline;
-}
-
-#navbar-container ul li#onpage a {
-    background-color: #ff5733; /* Active page background color */
-    color: yellow;
-}
-
-/* Sidebar (Side Navigation) */
+/* For Sidebar */
 #sidebar {
-    position: fixed;
-    right: 0;
-    top: 0;
-    background-color: red;
-    height: 100%;
-    width: 20%;
-    list-style-type: none;
-    text-align: center;
-    padding: 0;
+  position: fixed;
+  right: 0%;
+  background-color: red;
+  height: 100%;
+  width: 20%;
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+  display: block;
 }
 
-#sidebar-container ul {
-    padding: 15px 0;
-}
-
-#sidebar-container ul li a {
-    display: block;
-    padding: 10px;
-    color: #fff;
-    text-decoration: none;
-    background-color: #000;
+#sidebar ul li a {
+  color: #fff;
+  text-decoration: none;
+  background-color: #000;
+  padding: 15px 0;
 }

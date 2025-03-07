@@ -1,50 +1,15 @@
-/* Centered Top Navigation Bar */
-nav {
-    background-color: blue; /* Stretch background color across the page */
-    width: 100%;
-    position: relative;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    list-style-type: none; /* Remove bullet points */
-    display: flex;
-    justify-content: center; /* Center items horizontally */
-}
-
-nav a {
+/* Base styles for the navigation links */
+#navbar-container ul li a {
+    display: block;
     padding: 10px 20px;
     color: #fff;
-    text-decoration: none; /* Remove underlines */
+    text-decoration: none;
     background-color: #000;
-    display: block;
+    text-decoration: underline overline;
 }
 
-/* Fixed Side Navigation Bar */
-aside {
-    position: fixed; /* Make sidebar scroll with the page */
-    right: 0;
-    top: 0;
-    background-color: red;
-    height: 100%;
-    width: 20%;
-    list-style-type: none; /* Remove bullet points */
-    margin: 0;
-    padding: 0;
-    text-align: center;
+/* Highlight the active page link */
+#navbar-container ul li#onpage a {
+    background-color: #ff5733;  /* Example active page background color */
+    color: yellow;  /* Optionally change text color for the active link */
 }
-
-aside a {
-    display: block;
-    padding: 15px 0;
-    color: #fff;
-    text-decoration: none; /* Remove underlines */
-    background-color: #000;
-}
-
-/* General Styles */
-ul {
-    list-style-type: none; /* Remove bullet points */
-    margin: 0;
-    padding: 0;
-}
-

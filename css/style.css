@@ -1,15 +1,56 @@
-/* Base styles for the navigation links */
-#navbar-container ul li a {
+/* Navigation Bar (Top) */
+#navbar-container ul {
+    background-color: blue;
+    overflow: hidden;
+    float: left;
+    width: 100%;
+    position: relative;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    left: 50%;
+    float: left;
+    position: relative;
     display: block;
+}
+
+#navbar-container ul li {
+    display: inline-block;
     padding: 10px 20px;
+}
+
+#navbar-container ul li a {
     color: #fff;
     text-decoration: none;
     background-color: #000;
     text-decoration: underline overline;
 }
 
-/* Highlight the active page link */
+/* Highlight the active page */
 #navbar-container ul li#onpage a {
-    background-color: #ff5733;  /* Example active page background color */
+    background-color: #ff5733; /* Example active page background color */
     color: yellow;  /* Optionally change text color for the active link */
+}
+
+/* Sidebar (Side Navigation) */
+#sidebar {
+    position: fixed;
+    right: 0%;
+    background-color: red;
+    height: 100%;
+    width: 20%;
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+    display: block;
+}
+
+#sidebar-container ul {
+    padding: 15px 0;
+}
+
+#sidebar-container ul li a {
+    color: #fff;
+    text-decoration: none;
+    background-color: #000;
 }
